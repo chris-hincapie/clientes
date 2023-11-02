@@ -1,0 +1,246 @@
+{
+	"version": 1,
+	"collections": [
+		{
+			"id": "a0c143e3-6808-4d8c-87d7-301b8f1fc1ed",
+			"uid": "0-a0c143e3-6808-4d8c-87d7-301b8f1fc1ed",
+			"name": "Prueba GML",
+			"description": null,
+			"auth": null,
+			"events": null,
+			"variables": [],
+			"order": [
+				"d9993a7d-9379-4ca6-8b3e-2f7df1b68b9a",
+				"f47007a1-d70a-4431-9d01-d29b2d6a3367",
+				"ac517749-2132-4166-ba33-1abc7bb0a827",
+				"8b0841ac-d403-4b61-a043-f55504c15975",
+				"b99e95c4-74b2-42a8-960b-81b54fe3195c",
+				"ab56d24e-10c9-42cc-866c-bd5137f3d154",
+				"52fcf459-664a-473d-8792-7b1ad9d84e1d"
+			],
+			"folders_order": [],
+			"protocolProfileBehavior": {},
+			"createdAt": "2023-11-01T22:49:50.674Z",
+			"folders": [],
+			"requests": [
+				{
+					"id": "52fcf459-664a-473d-8792-7b1ad9d84e1d",
+					"uid": "0-52fcf459-664a-473d-8792-7b1ad9d84e1d",
+					"name": "Export CSV",
+					"url": "http://localhost:8090/menu/client/get/export",
+					"description": "",
+					"data": [],
+					"dataOptions": {
+						"raw": {
+							"language": "json"
+						}
+					},
+					"dataMode": "raw",
+					"headerData": null,
+					"method": "GET",
+					"pathVariableData": [],
+					"queryParams": [],
+					"auth": null,
+					"events": null,
+					"folder": null,
+					"responses_order": [],
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"currentHelper": null,
+					"helperAttributes": null,
+					"collectionId": "a0c143e3-6808-4d8c-87d7-301b8f1fc1ed",
+					"rawModeData": "[\r\n    {\r\n        \"sharedKey\": \"prueba\",\r\n        \"businessId\": \"prueba nombre\",\r\n        \"phone\": \"+573216548936\",\r\n        \"email\": \"prueba@prueba.com\",\r\n        \"dataAdded\": \"2023-11-02\"\r\n    },\r\n    {\r\n        \"sharedKey\": \"prueba2\",\r\n        \"businessId\": \"prueba nombre upd\",\r\n        \"phone\": \"+573216548940\",\r\n        \"email\": \"prueba2@prueba.com\",\r\n        \"dataAdded\": \"2023-11-02\"\r\n    },\r\n    {\r\n        \"sharedKey\": \"prueba4\",\r\n        \"businessId\": \"prueba nombre 3\",\r\n        \"phone\": \"+573216548939\",\r\n        \"email\": \"prueba3@prueba.com\",\r\n        \"dataAdded\": \"2023-11-01\"\r\n    }\r\n]",
+					"pathVariables": {}
+				},
+				{
+					"id": "8b0841ac-d403-4b61-a043-f55504c15975",
+					"uid": "0-8b0841ac-d403-4b61-a043-f55504c15975",
+					"name": "Update Client",
+					"url": "http://localhost:8090/menu/client",
+					"description": "",
+					"data": [],
+					"dataOptions": {
+						"raw": {
+							"language": "json"
+						}
+					},
+					"dataMode": "raw",
+					"headerData": null,
+					"method": "PUT",
+					"pathVariableData": [],
+					"queryParams": [],
+					"auth": null,
+					"events": null,
+					"folder": null,
+					"responses_order": [],
+					"currentHelper": null,
+					"helperAttributes": null,
+					"collectionId": "a0c143e3-6808-4d8c-87d7-301b8f1fc1ed",
+					"rawModeData": "{\r\n    \"sharedKey\": \"prueba2\",\r\n    \"businessId\": \"prueba nombre upd\",\r\n    \"phone\": \"+573216548940\",\r\n    \"email\": \"prueba2@prueba.com\",\r\n    \"dataAdded\": \"2023-11-03\"\r\n}",
+					"pathVariables": {}
+				},
+				{
+					"id": "ab56d24e-10c9-42cc-866c-bd5137f3d154",
+					"uid": "0-ab56d24e-10c9-42cc-866c-bd5137f3d154",
+					"name": "Get clients with filters",
+					"url": "http://localhost:8090/menu/client/get/filter?name=prueba nombre",
+					"description": "",
+					"data": null,
+					"dataOptions": null,
+					"dataMode": null,
+					"headerData": null,
+					"method": "GET",
+					"pathVariableData": [],
+					"queryParams": [
+						{
+							"key": "name",
+							"value": "prueba nombre",
+							"equals": true,
+							"description": null,
+							"enabled": true
+						},
+						{
+							"key": "phone",
+							"value": "+573216548936",
+							"equals": true,
+							"description": null,
+							"enabled": false
+						},
+						{
+							"key": "email",
+							"value": "prueba@prueba.com",
+							"equals": true,
+							"description": null,
+							"enabled": false
+						},
+						{
+							"key": "startdate",
+							"value": "2023-11-02",
+							"equals": true,
+							"description": null,
+							"enabled": false
+						},
+						{
+							"key": "enddate",
+							"value": "2023-11-02",
+							"equals": true,
+							"description": null,
+							"enabled": false
+						}
+					],
+					"auth": null,
+					"events": null,
+					"folder": null,
+					"responses_order": [],
+					"currentHelper": null,
+					"helperAttributes": null,
+					"collectionId": "a0c143e3-6808-4d8c-87d7-301b8f1fc1ed",
+					"pathVariables": {}
+				},
+				{
+					"id": "ac517749-2132-4166-ba33-1abc7bb0a827",
+					"uid": "0-ac517749-2132-4166-ba33-1abc7bb0a827",
+					"name": "Disable Client",
+					"url": "http://localhost:8090/menu/client/delete/prueba2",
+					"description": "",
+					"data": null,
+					"dataOptions": null,
+					"dataMode": null,
+					"headerData": null,
+					"method": "DELETE",
+					"pathVariableData": [],
+					"queryParams": [],
+					"auth": null,
+					"events": null,
+					"folder": null,
+					"responses_order": [],
+					"currentHelper": null,
+					"helperAttributes": null,
+					"collectionId": "a0c143e3-6808-4d8c-87d7-301b8f1fc1ed",
+					"pathVariables": {}
+				},
+				{
+					"id": "b99e95c4-74b2-42a8-960b-81b54fe3195c",
+					"uid": "0-b99e95c4-74b2-42a8-960b-81b54fe3195c",
+					"name": "Create Client",
+					"url": "http://localhost:8090/menu/client",
+					"description": "",
+					"data": [],
+					"dataOptions": {
+						"raw": {
+							"language": "json"
+						}
+					},
+					"dataMode": "raw",
+					"headerData": null,
+					"method": "POST",
+					"pathVariableData": [],
+					"queryParams": [],
+					"auth": null,
+					"events": null,
+					"folder": null,
+					"responses_order": [],
+					"currentHelper": null,
+					"helperAttributes": null,
+					"collectionId": "a0c143e3-6808-4d8c-87d7-301b8f1fc1ed",
+					"rawModeData": "{\r\n    \"name\": \"prueba nombre 3\",\r\n    \"phone\": \"+573216548939\",\r\n    \"email\": \"prueba3@prueba.com\",\r\n    \"startDate\": \"2023-11-02\",\r\n    \"endDate\": \"2023-11-02\"\r\n}",
+					"pathVariables": {}
+				},
+				{
+					"id": "d9993a7d-9379-4ca6-8b3e-2f7df1b68b9a",
+					"uid": "0-d9993a7d-9379-4ca6-8b3e-2f7df1b68b9a",
+					"name": "Get All Client",
+					"url": "http://localhost:8090/menu/client",
+					"description": "",
+					"data": null,
+					"dataOptions": null,
+					"dataMode": null,
+					"headerData": null,
+					"method": "GET",
+					"pathVariableData": [],
+					"queryParams": [],
+					"auth": null,
+					"events": null,
+					"folder": null,
+					"responses_order": [],
+					"currentHelper": null,
+					"helperAttributes": null,
+					"collectionId": "a0c143e3-6808-4d8c-87d7-301b8f1fc1ed",
+					"pathVariables": {}
+				},
+				{
+					"id": "f47007a1-d70a-4431-9d01-d29b2d6a3367",
+					"uid": "0-f47007a1-d70a-4431-9d01-d29b2d6a3367",
+					"name": "Get Client by shared Key",
+					"url": "http://localhost:8090/menu/client/get/prueba2",
+					"description": "",
+					"data": null,
+					"dataOptions": null,
+					"dataMode": null,
+					"headerData": null,
+					"method": "GET",
+					"pathVariableData": [],
+					"queryParams": [],
+					"auth": null,
+					"events": null,
+					"folder": null,
+					"responses_order": [],
+					"currentHelper": null,
+					"helperAttributes": null,
+					"collectionId": "a0c143e3-6808-4d8c-87d7-301b8f1fc1ed",
+					"pathVariables": {}
+				}
+			]
+		}
+	],
+	"environments": [
+		{
+			"id": "164ddb66-80a7-414b-a8b4-74fb31766804",
+			"name": "My Workspace - globals",
+			"values": []
+		}
+	],
+	"headerPresets": [],
+	"globals": []
+}

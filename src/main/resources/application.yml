@@ -1,0 +1,15 @@
+server:
+  port: 8090
+
+spring:
+  datasource:
+    url: jdbc:mysql://localhost/DBCLIENTS
+    username: root
+    password: welcome1
+
+  jpa:
+    hibernate:
+      ddl-auto: update
+
+appDescription: "Client API"
+appVersion: "1.0.0"
